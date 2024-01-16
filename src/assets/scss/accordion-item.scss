@@ -1,0 +1,43 @@
+.accordion-item {
+    padding: 1.5rem 0 0;
+    
+    &:not(:last-of-type) {
+        border-bottom: 1px solid $light-pink;
+    }
+
+    .accordion-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+
+        h3 {
+            transition: .4s ease-in-out all;
+        }
+
+        img {
+            margin-left: 10px;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            h3 {
+                color: $purple;
+            }
+        }
+    }
+
+    p {
+        overflow: hidden;
+        transition: .4s ease-in-out all;
+        max-height: 10rem;
+        line-height: 25px;
+        margin-bottom: 1.5rem;
+
+        &.collapsed {
+            max-height: 0;
+            margin-bottom: 0;
+        }
+    }
+}

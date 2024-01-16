@@ -1,0 +1,27 @@
+.accordion {
+    background-color: $white;
+    max-width: 650px;
+    width: 90%;
+    padding: 3rem 3rem 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    .accordion-container-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        h1 {
+            margin-bottom: 0;
+            font-size: 3rem;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 2rem 2rem 1rem;
+    }
+}
