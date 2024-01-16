@@ -10,7 +10,7 @@ export const Accordion = () => {
     <div className='accordion'>
       <div className='accordion-container-header'>
         <img src={IconStar} alt="icon-star"/>
-        <h1>FAQs</h1>
+        <h1>FAQs</h1> 
       </div>
       {faqs.map((el, index) => <AccordionItem title={el.title} content={el.content} id={el.id} currOpen={currOpen} onCurrOpen={setCurrOpen} key={el.id} />)}
     </div>
