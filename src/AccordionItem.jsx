@@ -11,12 +11,12 @@ export const AccordionItem = ({ title, content, id, currOpen, onCurrOpen, key })
   }
 
   return (
-    <div className='accordion-item'>
-      <div className='accordion-title' onClick={handleOpen}>
-        <h3>{title}</h3>
+    <div className='accordion-item' aria-expanded={isOpen}>
+      <h3 className='accordion-title' onClick={handleOpen} id={`accordion-title-${id}`}>
+        {title}
         <img src={isOpen ? IconMinus : IconPlus} alt='icon'/>
-      </div>
-      <p className={isOpen ? '' : 'collapsed'}>{content}</p>
+      </h3>
+      <p className={isOpen ? '' : 'collapsed'} aria-labelledby={`accordion-title-${id}`}>{content}</p>
     </div>
   );
 };
