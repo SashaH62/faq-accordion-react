@@ -23,5 +23,18 @@
 
     @media (max-width: $mobile) {
         padding: 2rem 2rem 1rem;
+
+        .accordion-container-header {
+            margin-bottom: 0;
+    
+            h1 {
+                margin-bottom: 0;
+                font-size: 2.5rem;
+            }
+    
+            img {
+                max-width: 30px;
+            }
+        }
     }
 }
